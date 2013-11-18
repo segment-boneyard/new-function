@@ -1,0 +1,15 @@
+{
+  "name": "function-wrap",
+  "version": "0.0.1",
+  "description": "Wraps javascript code in a function",
+  "keywords": ["sourceUrls", "javascript","wrap","function"],
+  "author": "Segment.io <friends@segment.io>",
+  "repository": "git://github.com/segmentio/function-wrap.git",
+  "devDependencies": {
+    "mocha": "~1.14.0"
+  },
+  "main": "./lib/index.js",
+  "dependencies": {
+    "defaults": "~1.0.0"
+  }
+}
