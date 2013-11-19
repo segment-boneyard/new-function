@@ -1,15 +1,12 @@
 {
-  "name": "function-wrap",
-  "version": "0.0.1",
+  "name": "new-function",
+  "version": "0.0.2",
   "description": "Wraps javascript code in a function",
   "keywords": ["sourceUrls", "javascript","wrap","function"],
   "author": "Segment.io <friends@segment.io>",
-  "repository": "git://github.com/segmentio/function-wrap.git",
+  "repository": "git://github.com/segmentio/new-function.git",
   "devDependencies": {
     "mocha": "~1.14.0"
   },
-  "main": "./lib/index.js",
-  "dependencies": {
-    "defaults": "~1.0.0"
-  }
+  "main": "./lib/index.js"
 }

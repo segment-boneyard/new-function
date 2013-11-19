@@ -1,36 +1,35 @@
 
-# function-wrap
+# new-function
 
-  Wraps javascript code in a function.
+  Wrap javascript code in a function.
 
 ## Install
 
-    npm install function-wrap
+    npm install new-function
 
 ## Example
 
 ```js
-var wrap = require('function-wrap');
+var newFunction = require('new-function');
 
-wrap('console.log(1);');
+newFunction('console.log(1);');
 // 'function(){\nconsole.log(1);\n}'
 
-wrap('console.log(1);', { args: 'a,b' });
+newFunction('a,b', 'console.log(1);');
 // 'function(a,b){\nconsole.log(1);\n}'
 
-wrap('console.log(1);', { args: 'a,b', sourceUrl: 'add.js' });
+newFunction('a,b', 'console.log(1);', { sourceUrl: 'add.js' });
 // 'Function("a,b",\n"console.log(1);//@ sourceURL=add.js"\n)'
 ```
 
 ## API
 
-### wrap(js, options);
+### newFunction([args], js, options);
 
   Wrap a `js` script in a function and return the resulting javascript code. Custom `options`:
 
 ```js
 {
-  "args": "", // the function arguments
   "sourceUrl": null // allows browser source mapping
 }
 ```
